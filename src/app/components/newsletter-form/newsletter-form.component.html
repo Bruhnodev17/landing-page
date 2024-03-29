@@ -1,1 +1,17 @@
-<p>newsletter-form works!</p>
+
+<section class="form-section">
+  <div class="text">
+    <h3>
+      Fique por dentro das tendências
+    </h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae molestias iure doloribus at sapiente culpa suscipit eligendi modi, labore optio officiis consectetur necessitatibus distinctio alias ratione, ipsum praesentium ex totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit consequuntur magnam ut corrupti necessitatibus, esse fugiat exercitationem, quas iste laboriosam modi accusantium repudiandae! Sapiente similique voluptatum delectus doloribus sint recusandae.</p>
+  </div>
+  <form [formGroup]="newsletterForm">
+    <label for="name">Name</label>
+    <input id="name" formControlName="name">
+    <label for="email">Email</label>
+    <input id="email" formControlName="email"/>
+
+    <btn-primary btn-text="Se Inscreva" variant="secondary" (submit)="onSubmit()"></btn-primary>
+  </form>
+</section>
