@@ -12,6 +12,8 @@
     <label for="email">Email</label>
     <input id="email" formControlName="email"/>
 
-    <btn-primary btn-text="Se Inscreva" variant="secondary" (submit)="onSubmit()"></btn-primary>
+    <btn-primary
+     btn-text="Se Inscreva" variant="secondary" (submit)="onSubmit()" [disabled]="!newsletterForm.valid"
+     ></btn-primary>
   </form>
 </section>
